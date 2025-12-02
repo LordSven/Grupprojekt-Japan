@@ -6,6 +6,7 @@ app = dash.Dash(__name__, use_pages=True)
 from pages import matteo, nicolas, niklas
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.FLATLY])
+server = app.server
 
 app.layout = html.Div([
     html.Div(
